@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "no-unused-vars": "warn"
+  }
+}
