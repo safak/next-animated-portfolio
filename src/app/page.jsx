@@ -18,7 +18,7 @@ const Homepage = () => {
           <h1 className="text-4xl md:text-5xl font-bold">Welcome!</h1>
           {/* Description */}
           <p className="md:text-xl">
-          Hello! I'm a Computer Science student at Simon Fraser University with a knack for Android app and full-stack web development. Eager to bring my programming acumen to the professional world, I'm on the lookout for an internship opportunity. Take a peek at my portfolio to see the solutions I craft with code.          </p>
+          Hello! I am a Computer Science student at Simon Fraser University with a knack for Android app and full-stack web development. Eager to bring my programming acumen to the professional world, I am on the lookout for an internship opportunity. Take a peek at my portfolio to see the solutions I craft with code.</p>
           {/* Button */}
           <div className="flex w-full gap-4">
             <Link href="/portfolio">
