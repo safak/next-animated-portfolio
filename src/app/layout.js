@@ -12,10 +12,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.className}>
-        <TransitionProvider children={children}/>
-        </body>
+        {/* Nest TransitionProvider with children directly */}
+        <TransitionProvider>{children}</TransitionProvider>
+      </body>
     </html>
-  );
+  )
 }
