@@ -1,8 +1,12 @@
+"use client"
+import {motion} from "framer-motion"
+
 import Image from 'next/image'
 import React from 'react'
 
 const HomePage = () => {
   return (
+    <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
     <div className="h-full flex flex-col px-4 gap-4 lg:flex-row sm:px-8 md:px-12 lg:px-20 xl:px-48">
 
     {/*image container*/}
@@ -31,6 +35,7 @@ const HomePage = () => {
     {/*end of text container*/}
       
     </div>
+    </motion.div>
   )
 }
 
