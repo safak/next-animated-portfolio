@@ -31,11 +31,11 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
-              src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/padlogo.png"
               alt=""
               width={112}
               height={112}
-              className="w-28 h-28 rounded-full object-cover"
+              className="w-28 h-28 rounded-full object-cover bg-black p-6 rounded-full"
             />
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
