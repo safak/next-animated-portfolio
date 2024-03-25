@@ -58,7 +58,7 @@ const PortfolioPage = () => {
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-b from-yellow-300 to-black" />
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
@@ -100,7 +100,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+                Fashion and Shoe Designer
               </textPath>
             </text>
           </motion.svg>
@@ -108,7 +108,7 @@ const PortfolioPage = () => {
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
-            Hire Me
+            Contact Us
           </Link>
         </div>
       </div>

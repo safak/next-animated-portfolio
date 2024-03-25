@@ -1,5 +1,5 @@
 "use client";
-import Brain from "@/components/brain";
+import Brain from "@/components/machine";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
@@ -38,7 +38,7 @@ const AboutPage = () => {
               className="w-28 h-28 rounded-full object-cover bg-black p-6 rounded-full"
             />
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">HISTORY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -46,11 +46,11 @@ const AboutPage = () => {
               reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
               suscipit! Vel doloremque numquam quam nihil.
             </p>
-            {/* BIOGRAPHY QUOTE */}
+            {/*  BIOGRAPHY QUOTE */}
             <span className="italic">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </span>
-            {/* BIOGRAPHY SIGN SVG*/}
+            {/*  BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
               <svg
                 width="185"
@@ -66,7 +66,7 @@ const AboutPage = () => {
                 />
               </svg>
             </div>
-            {/* BIOGRAPHY SCROLL SVG */}
+            {/*    BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -207,19 +207,19 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* EXPERIENCE CONTAINER */}
+          {/*  EXPERIENCE CONTAINER */}
           <div
             className="flex flex-col gap-12 justify-center pb-48"
             ref={experienceRef}
           >
-            {/* EXPERIENCE TITLE */}
+            {/*  EXPERIENCE TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              EXPERIENCE
+              ACHIEVEMENTS
             </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
@@ -232,7 +232,7 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-black p-3 font-semibold rounded-b-lg rounded-s-lg text-white ring-white">
                     Senior JavaScript Engineer
                   </div>
                   {/* JOB DESC */}
@@ -249,12 +249,12 @@ const AboutPage = () => {
                     Apple
                   </div>
                 </div>
-                {/* CENTER */}
+                {/*  CENTER */}
                 <div className="w-1/6 flex justify-center">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-yellow-400 bg-black -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -269,13 +269,13 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-blue-700 -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-blue-500 p-3 font-semibold rounded-b-lg rounded-s-lg text-white">
                     Senior React Developer
                   </div>
                   {/* JOB DESC */}
@@ -288,7 +288,7 @@ const AboutPage = () => {
                     2019 - 2024{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-black text-white text-sm font-semibold w-fit">
                     Microsoft
                   </div>
                 </div>
@@ -316,7 +316,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-yellow-700 bg-black -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -326,7 +326,7 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+        <div className="hidden lg:block w-1/2 sticky top-0 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
