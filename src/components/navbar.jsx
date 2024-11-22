@@ -28,13 +28,13 @@ const Navbar = () => {
             {/* LINKS */}
             <div className="hidden md:flex gap-4 w-1/3">
                 {links.map((link)=>(
-                    <Link href={link.url}> {link.title} </Link>
+                    <Link href={link.url} key={link.title}> {link.title} </Link>
                 ))}
             </div>
 
 
             {/* LOGO */}
-            <div className="md:hidden lg:flex w-1/3 justify-center"> 
+            <div className="md:hidden lg:flex w-1/3  justify-center"> 
                 <Link href="/" className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center">
                     <span className="text-white mr-1">Stef</span>
                     <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">.Dev</span>
@@ -43,7 +43,7 @@ const Navbar = () => {
 
 
             {/* SOCIAL */}
-            <div className="hidden md:flex gap-4">
+            <div className="hidden md:flex gap-4 w-1/3">
                 <Link href="/">
                     <Image src="/github.png" alt="" width={24} height={24} />
                 </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                      <div className="absolute top-0 left-0 w-screen h-screen
                      bg-black text-4xl text-white flex flex-col items-center justify-center gap-8">
                         {links.map((link)=>(
-                            <Link href={link.url}>{link.title}</Link>
+                            <Link href={link.url} key={link.title}>{link.title}</Link>
                         ))}
     
                     </div>
