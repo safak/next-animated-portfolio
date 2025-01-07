@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .app-container {
+    @apply sm:px-8 md:px-12 lg:px-20 xl:px-48;
+  }
+
+  .home-section {
+    @apply h-1/2 lg:h-full lg:w-1/2;
+  }
+}
