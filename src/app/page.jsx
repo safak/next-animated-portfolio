@@ -10,10 +10,17 @@ const Homepage = () => {
       {/* TEXT CONTAINER */}
       <div className="home-section flex flex-col gap-8 justify-center lg:items-start items-center">
         {/* TITLE  */}
-        <h1 className="text-4xl md:text-6xl font-bold ">Anel Danza</h1>
+        <h1 className="text-4xl md:text-6xl font-bold ">
+          Hi, I’m Anel Danza – Full-Stack Developer
+        </h1>
         {/* DESCRIPTION  */}
         <p className="md:text-xl">
-          This is a portfolio intro description for Anel Danza
+          With a passion for turning ideas into functional, user-friendly
+          solutions, I specialize in building robust web applications using
+          modern technologies. From designing intuitive user experiences to
+          crafting efficient backend systems, I bring a blend of creativity,
+          technical expertise, and a commitment to delivering high-quality
+          results.
         </p>
 
         {/* BUTTONS  */}
