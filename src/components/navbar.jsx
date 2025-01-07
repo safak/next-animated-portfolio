@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const list = [
   { url: "/", title: "Home" },
@@ -14,8 +15,15 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
+      <div className="hidden md:flex space-x-4 w-1/3">
+        {list.map((item, index) => (
+          <Link key={index} href={item.url}>
+            {item.title}
+          </Link>
+        ))}
+      </div>
       {/* Logo  */}
-      <div>
+      <div className="md:hidden lg:flex w-1/3 justify-center">
         <Link
           href="/"
           className="text-sm font-semibold bg-black rounded-md p-1 flex items-center justify-center"
@@ -27,8 +35,18 @@ const NavBar = () => {
         </Link>
       </div>
 
-      {/* Menu button */}
-      <div>
+      <div className="hidden md:flex space-x-4 w-1/3 justify-end">
+        <Link href="https://github.com/aneldanza" target="_blank">
+          <Image src="/github.png" alt="github" width={24} height={24} />
+        </Link>
+        <Link href="https://www.linkedin.com/in/anel-danza/" target="_blank">
+          <Image src="/linkedin.png" alt="linkedin" width={24} height={24} />
+        </Link>
+      </div>
+
+      {/* Responsive Menu  */}
+      <div className="md:hidden">
+        {/* Menu button */}
         <button
           className="flex flex-col h-8 justify-between z-50 relative"
           onClick={() => setIsOpen(!isOpen)}
