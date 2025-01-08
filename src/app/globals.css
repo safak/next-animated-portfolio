@@ -10,4 +10,12 @@
   .home-section {
     @apply h-1/2 lg:h-full lg:w-1/2;
   }
+
+  .about-section {
+    @apply flex flex-col gap-12 justify-center;
+  }
+
+  .skill-tag {
+    @apply bg-black text-white px-2 py-1 rounded text-sm cursor-pointer hover:bg-white hover:text-black border border-black;
+  }
 }

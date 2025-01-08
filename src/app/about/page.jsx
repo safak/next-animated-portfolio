@@ -3,6 +3,24 @@
 import { motion } from "motion/react";
 import { BsArrowDownCircle } from "react-icons/bs";
 
+const skills = [
+  "JavaScript",
+  "Typescript",
+  "React",
+  "Redux",
+  "Next.js",
+  "Node.js",
+  "Express",
+  "Rails",
+  "Ruby",
+  "PostgreSQL",
+  "Python",
+  "HTML",
+  "CSS",
+  "SASS",
+  "Tailwind",
+];
+
 const AboutPage = () => {
   return (
     <motion.div
@@ -15,7 +33,7 @@ const AboutPage = () => {
         {/* TEXT CONTAINER  */}
         <div className="sm:p-8 md:p-12 lg:p-20 xl:p-48 p-4 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
           {/* BIOGRAPHY  */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="about-section">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
 
             <p className="text-xl">
@@ -32,10 +50,34 @@ const AboutPage = () => {
 
             <BsArrowDownCircle className="text-4xl" />
           </div>
+
           {/* SKILLS  */}
-          <div>SKILLS</div>
+          <div className="about-section">
+            <h1 className="font-bold text-2xl">SKILLS</h1>
+
+            {/* SKILLS LIST  */}
+            <div className="flex flex-wrap gap-4">
+              {skills.map((skill) => (
+                <div key={skill} className="skill-tag">
+                  {skill}
+                </div>
+              ))}
+            </div>
+
+            {/* SCROLL SVG  */}
+            <BsArrowDownCircle className="text-4xl" />
+          </div>
           {/* EXPERIENCE  */}
-          <div>EXPERIENCE</div>
+
+          <div className="about-section pb-48">
+            <div className="font-bold text-2xl">EXPERIENCE</div>
+
+            {/* EXPERIENCE LIST  */}
+            <div>
+              {/* EXPERIENCE ITEM  */}
+              <div></div>
+            </div>
+          </div>
         </div>
 
         {/* SVG CONTAINER  */}
