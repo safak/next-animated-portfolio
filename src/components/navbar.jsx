@@ -69,8 +69,8 @@ const listItemVariants = {
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="h-full flex items-center justify-between app-container text-xl">
-      <div className="hidden md:flex space-x-4 w-1/3">
+    <div className="h-full flex items-center justify-between app-container text-xl relative">
+      <div className="hidden md:flex md:w-1/3 md:flex-shrink z-20">
         {list.map((item, index) => (
           <NavLink key={index} link={item} />
         ))}
@@ -128,7 +128,7 @@ const NavBar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center space-y-8 text-4xl z-40"
+            className="absolute top-0 right-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center space-y-8 text-4xl z-40"
           >
             {list.map((item, index) => (
               <motion.div variants={listItemVariants} key={index}>

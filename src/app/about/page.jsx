@@ -1,9 +1,17 @@
+"use client";
+
+import { motion } from "motion/react";
+
 const AboutPage = () => {
   return (
-    <div>
-      <h1>About</h1>
-      <p>This is the about page.</p>
-    </div>
+    <motion.div
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      About Page
+    </motion.div>
   );
 };
 
