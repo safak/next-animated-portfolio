@@ -42,6 +42,30 @@ const centerVariants = {
   },
 };
 
+const listVariants = {
+  closed: {
+    x: "100vw",
+  },
+  opened: {
+    x: 0,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const listItemVariants = {
+  closed: {
+    x: -10,
+    opacity: 0,
+  },
+  opened: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -100,13 +124,18 @@ const NavBar = () => {
         {/* Menu */}
 
         {isOpen && (
-          <div className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center space-y-8 text-4xl z-40">
+          <motion.div
+            variants={listVariants}
+            initial="closed"
+            animate="opened"
+            className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center space-y-8 text-4xl z-40"
+          >
             {list.map((item, index) => (
-              <Link key={index} href={item.url}>
-                {item.title}
-              </Link>
+              <motion.div variants={listItemVariants} key={index}>
+                <Link href={item.url}>{item.title}</Link>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
