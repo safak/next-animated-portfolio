@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavLink from "./navLink";
+import { motion } from "motion/react";
 
 const list = [
   { url: "/", title: "Home" },
@@ -12,10 +13,39 @@ const list = [
   { url: "/contact", title: "Contact" },
 ];
 
+const topVariants = {
+  closed: {
+    rotate: 0,
+  },
+  opened: {
+    rotate: 45,
+    backgroundColor: "white",
+  },
+};
+
+const bottomVariants = {
+  closed: {
+    rotate: 0,
+  },
+  opened: {
+    rotate: -45,
+    backgroundColor: "white",
+  },
+};
+
+const centerVariants = {
+  closed: {
+    opacity: 1,
+  },
+  opened: {
+    opacity: 0,
+  },
+};
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="h-full flex items-center justify-between px-4 app-container text-xl">
+    <div className="h-full flex items-center justify-between app-container text-xl">
       <div className="hidden md:flex space-x-4 w-1/3">
         {list.map((item, index) => (
           <NavLink key={index} link={item} />
@@ -50,15 +80,27 @@ const NavBar = () => {
           className="flex flex-col h-8 justify-between z-50 relative"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className="h-1 w-10 bg-black rounded"></div>
-          <div className="h-1 w-10 bg-black rounded"></div>
-          <div className="h-1 w-10 bg-black rounded"></div>
+          <motion.div
+            variants={topVariants}
+            animate={isOpen ? "opened" : "closed"}
+            className="h-1 w-10 bg-black rounded origin-left"
+          ></motion.div>
+          <motion.div
+            variants={centerVariants}
+            animate={isOpen ? "opened" : "closed"}
+            className="h-1 w-10 bg-black rounded origin-left"
+          ></motion.div>
+          <motion.div
+            variants={bottomVariants}
+            animate={isOpen ? "opened" : "closed"}
+            className="h-1 w-10 bg-black rounded origin-left"
+          ></motion.div>
         </button>
 
         {/* Menu */}
 
         {isOpen && (
-          <div className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center space-y-8 text-4xl">
+          <div className="absolute top-0 left-0 h-screen w-screen bg-black text-white flex flex-col items-center justify-center space-y-8 text-4xl z-40">
             {list.map((item, index) => (
               <Link key={index} href={item.url}>
                 {item.title}
