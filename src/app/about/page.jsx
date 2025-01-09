@@ -1,11 +1,15 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useScroll } from "motion/react";
+import { useRef } from "react";
 import { BsArrowDownCircle } from "react-icons/bs";
 import { skills, jobs } from "./constants";
 import ExperienceItem from "./experienceItem";
+import Brain from "./brain";
 
 const AboutPage = () => {
+  const containerRef = useRef();
+  const { scrollYProgress } = useScroll(containerRef);
   return (
     <motion.div
       className="h-full"
@@ -13,7 +17,7 @@ const AboutPage = () => {
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full overflow-scroll lg:flex ">
+      <div ref={containerRef} className="h-full overflow-scroll lg:flex ">
         {/* TEXT CONTAINER  */}
         <div className=" p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY  */}
@@ -66,7 +70,9 @@ const AboutPage = () => {
         </div>
 
         {/* SVG CONTAINER  */}
-        <div className="hidden lg:block lg:w-1/3 xl:1/2 "></div>
+        <div className="hidden lg:block lg:w-1/3 xl:1/2 ">
+          <Brain scrollYProgress={scrollYProgress} />
+        </div>
       </div>
     </motion.div>
   );
