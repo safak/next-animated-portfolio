@@ -2,24 +2,8 @@
 
 import { motion } from "motion/react";
 import { BsArrowDownCircle } from "react-icons/bs";
-
-const skills = [
-  "JavaScript",
-  "Typescript",
-  "React",
-  "Redux",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "Rails",
-  "Ruby",
-  "PostgreSQL",
-  "Python",
-  "HTML",
-  "CSS",
-  "SASS",
-  "Tailwind",
-];
+import { skills, jobs } from "./constants";
+import ExperienceItem from "./experienceItem";
 
 const AboutPage = () => {
   return (
@@ -29,7 +13,7 @@ const AboutPage = () => {
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div>
+      <div className="h-full overflow-scroll lg:flex">
         {/* TEXT CONTAINER  */}
         <div className="sm:p-8 md:p-12 lg:p-20 xl:p-48 p-4 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
           {/* BIOGRAPHY  */}
@@ -74,8 +58,9 @@ const AboutPage = () => {
 
             {/* EXPERIENCE LIST  */}
             <div>
-              {/* EXPERIENCE ITEM  */}
-              <div></div>
+              <ExperienceItem job={jobs[0]} side="left" />
+              <ExperienceItem job={jobs[1]} side="right" />
+              <ExperienceItem job={jobs[2]} side="left" />
             </div>
           </div>
         </div>
