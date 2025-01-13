@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll } from "motion/react";
+import { motion, useScroll, useInView } from "motion/react";
 import { useRef } from "react";
 import { BsArrowDownCircle } from "react-icons/bs";
 import { skills, jobs } from "./constants";
@@ -10,6 +10,16 @@ import Brain from "./brain";
 const AboutPage = () => {
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({ container: containerRef });
+
+  const skillContainerRef = useRef();
+  const isSkillContainerInView = useInView(skillContainerRef, {
+    threshold: 0.3,
+  });
+
+  const experienceContainerRef = useRef();
+  const isExperienceContainerInView = useInView(experienceContainerRef, {
+    threshold: 0.3,
+  });
   return (
     <motion.div
       className="h-full"
@@ -40,32 +50,52 @@ const AboutPage = () => {
           </div>
 
           {/* SKILLS  */}
-          <div className="about-section">
-            <h1 className="font-bold text-2xl">SKILLS</h1>
+          <div ref={skillContainerRef} className="about-section">
+            <motion.h1
+              initial={{ x: "-300px" }}
+              animate={isSkillContainerInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl"
+            >
+              SKILLS
+            </motion.h1>
 
             {/* SKILLS LIST  */}
-            <div className="flex flex-wrap gap-4">
+            <motion.div
+              initial={{ x: "-300px" }}
+              animate={isSkillContainerInView ? { x: 0 } : {}}
+              className="flex flex-wrap gap-4"
+            >
               {skills.map((skill) => (
                 <div key={skill} className="skill-tag">
                   {skill}
                 </div>
               ))}
-            </div>
+            </motion.div>
 
             {/* SCROLL SVG  */}
             <BsArrowDownCircle className="text-4xl" />
           </div>
           {/* EXPERIENCE  */}
 
-          <div className="about-section pb-48">
-            <div className="font-bold text-2xl">EXPERIENCE</div>
+          <div ref={experienceContainerRef} className="about-section pb-48">
+            <motion.div
+              initial={{ x: "-300px" }}
+              animate={isExperienceContainerInView ? { x: 0 } : {}}
+              className="font-bold text-2xl"
+            >
+              EXPERIENCE
+            </motion.div>
 
             {/* EXPERIENCE LIST  */}
-            <div>
+            <motion.div
+              initial={{ x: "-300px" }}
+              animate={isExperienceContainerInView ? { x: 0 } : {}}
+            >
               <ExperienceItem job={jobs[0]} side="left" />
               <ExperienceItem job={jobs[1]} side="right" />
               <ExperienceItem job={jobs[2]} side="left" />
-            </div>
+            </motion.div>
           </div>
         </div>
 
