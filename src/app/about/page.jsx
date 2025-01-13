@@ -9,7 +9,7 @@ import Brain from "./brain";
 
 const AboutPage = () => {
   const containerRef = useRef();
-  const { scrollYProgress } = useScroll(containerRef);
+  const { scrollYProgress } = useScroll({ container: containerRef });
   return (
     <motion.div
       className="h-full"
@@ -17,7 +17,7 @@ const AboutPage = () => {
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div ref={containerRef} className="h-full overflow-scroll lg:flex ">
+      <div ref={containerRef} className="h-full overflow-scroll flex ">
         {/* TEXT CONTAINER  */}
         <div className=" p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY  */}
@@ -70,7 +70,7 @@ const AboutPage = () => {
         </div>
 
         {/* SVG CONTAINER  */}
-        <div className="hidden lg:block lg:w-1/3 xl:1/2 ">
+        <div className="hidden lg:block sticky top-0 z-30 w-1/3 xl:w-1/2 ">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
