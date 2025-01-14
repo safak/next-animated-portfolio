@@ -10,11 +10,17 @@ const ProjectItem = ({ item }) => {
       style={{ backgroundColor: item.color }}
     >
       <div className="flex flex-col gap-8 text-white">
-        <h1>{item.title}</h1>
-        <div>{/* <Image src={item.img} alt={item.title} fill /> */}</div>
-        <p>{item.desc}</p>
-        <Link href={item.link}>
-          <button>View</button>
+        <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold ">
+          {item.title}
+        </h1>
+        <div className="relative h-56 md:h-64 lg:h-[350px] xl:h-[420px] project-image-width">
+          <Image src={item.img} alt={item.title} fill />
+        </div>
+        <p className="project-image-width lg:text-lg">{item.desc}</p>
+        <Link href={item.link} className="flex justify-end">
+          <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-black rounded-md">
+            View
+          </button>
         </Link>
       </div>
     </div>
