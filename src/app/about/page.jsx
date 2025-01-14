@@ -2,10 +2,10 @@
 
 import { motion, useScroll, useInView } from "motion/react";
 import { useRef } from "react";
-import { BsArrowDownCircle } from "react-icons/bs";
 import { skills, jobs } from "./constants";
 import ExperienceItem from "./experienceItem";
 import Brain from "./brain";
+import ScrollIcon from "./scrollIcon";
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -46,7 +46,7 @@ const AboutPage = () => {
               innovation, and a desire to deliver meaningful results.
             </p>
 
-            <BsArrowDownCircle className="text-4xl" />
+            <ScrollIcon />
           </div>
 
           {/* SKILLS  */}
@@ -74,7 +74,8 @@ const AboutPage = () => {
             </motion.div>
 
             {/* SCROLL SVG  */}
-            <BsArrowDownCircle className="text-4xl" />
+
+            <ScrollIcon />
           </div>
           {/* EXPERIENCE  */}
 
