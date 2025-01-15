@@ -18,7 +18,7 @@ const ProjectItem = ({ item }) => {
         </div>
         <p className="project-image-width lg:text-lg">{item.desc}</p>
         <Link href={item.link} className="flex justify-end">
-          <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-black rounded-md">
+          <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-md">
             View
           </button>
         </Link>
