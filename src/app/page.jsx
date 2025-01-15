@@ -1,16 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "motion/react";
+import AnimatedPageWrapper from "@/components/animatedPageWrapper";
 
 const Homepage = () => {
   return (
-    <motion.div
-      className="h-full"
-      initial={{ y: "-200vh" }}
-      animate={{ y: 0 }}
-      transition={{ duration: 1 }}
-    >
+    <AnimatedPageWrapper>
       <div className="h-full flex flex-col lg:flex-row app-container">
         {/* IMAGE CONTAINER  */}
         <div className="home-section relative">
@@ -43,7 +38,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </AnimatedPageWrapper>
   );
 };
 
