@@ -16,7 +16,7 @@ const PortfolioPage = () => {
 
         <HorizontalScrollCarousel />
 
-        <div className="h-screen w-screen flex flex-col gap-16 justify-center items-center text-center px-2">
+        <div className="h-screen w-screen flex flex-col gap-16 justify-center items-center text-center app-container">
           <h1 className="text-4xl md:text-6xl lg:text-8xl flex flex-wrap">
             Do you have a project?
           </h1>
