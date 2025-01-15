@@ -22,4 +22,8 @@
   .project-image-width {
     @apply w-80 md:w-96 lg:w-[500px] xl:w-[600px];
   }
+
+  .input-field {
+    @apply bg-transparent border-b-2 border-b-black outline-none;
+  }
 }
