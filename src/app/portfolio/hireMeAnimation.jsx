@@ -12,7 +12,7 @@ const HireMeAnimation = () => {
         fill="none"
         viewBox="0 0 300 300"
         stroke="currentColor"
-        class="w-64 h-64 md:w-96 md:h-96"
+        className="w-64 h-64 md:w-96 md:h-96"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
       >
