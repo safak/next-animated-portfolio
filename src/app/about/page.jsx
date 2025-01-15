@@ -6,6 +6,7 @@ import { skills, jobs } from "./constants";
 import ExperienceItem from "./experienceItem";
 import Brain from "./brain";
 import ScrollIcon from "./scrollIcon";
+import AnimatedPageWrapper from "@/components/animatedPageWrapper";
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -21,12 +22,7 @@ const AboutPage = () => {
     threshold: 0.3,
   });
   return (
-    <motion.div
-      className="h-full"
-      initial={{ y: "-200vh" }}
-      animate={{ y: 0 }}
-      transition={{ duration: 1 }}
-    >
+    <AnimatedPageWrapper>
       <div ref={containerRef} className="h-full overflow-scroll flex ">
         {/* TEXT CONTAINER  */}
         <div className=" p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
@@ -105,7 +101,7 @@ const AboutPage = () => {
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
-    </motion.div>
+    </AnimatedPageWrapper>
   );
 };
 
