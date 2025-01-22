@@ -9,6 +9,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.pexels.com",
       },
+      {
+        protocol: "https",
+        hostname: "digital-image-assets.s3.us-east-2.amazonaws.com",
+      },
     ],
   },
 };

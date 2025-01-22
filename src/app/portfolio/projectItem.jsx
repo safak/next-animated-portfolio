@@ -13,7 +13,7 @@ const ProjectItem = ({ item }) => {
         <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold ">
           {item.title}
         </h1>
-        <div className="relative h-56 md:h-64 lg:h-[350px] xl:h-[420px] project-image-width">
+        <div className="relative h-80 md:h-96 lg:h-[500px] xl:h-[600px] project-image-width">
           <Image src={item.img} alt={item.title} fill />
         </div>
         <p className="project-image-width lg:text-lg">{item.desc}</p>
