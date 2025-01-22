@@ -13,10 +13,12 @@ const ProjectItem = ({ item }) => {
         <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold ">
           {item.title}
         </h1>
-        <div className="relative h-80 md:h-96 lg:h-[500px] xl:h-[600px] project-image-width">
-          <Image src={item.img} alt={item.title} fill />
+        <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
+          <div className="relative h-80 md:h-96 lg:h-[500px] xl:h-[600px] project-image-width">
+            <Image src={item.img} alt={item.title} fill />
+          </div>
+          <p className="project-image-width lg:text-lg">{item.desc}</p>
         </div>
-        <p className="project-image-width lg:text-lg">{item.desc}</p>
         <Link href={item.link} className="flex justify-end">
           <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-md">
             View
