@@ -6,7 +6,10 @@ import Link from "next/link";
 
 const HireMeAnimation = () => {
   return (
-    <div className="relative">
+    <Link href={"/contact"} className="relative cursor-pointer">
+      <div className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center">
+        Hire Me
+      </div>
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -32,14 +35,7 @@ const HireMeAnimation = () => {
           </textPath>
         </text>
       </motion.svg>
-
-      <Link
-        href={"/contact"}
-        className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
-      >
-        Hire Me
-      </Link>
-    </div>
+    </Link>
   );
 };
 
