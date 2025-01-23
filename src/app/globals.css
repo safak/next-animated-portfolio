@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-accent: 128, 0, 128;
+    --gradient-from: 252, 231, 243;
+    --gradient-mid: 255, 237, 213;
+    --gradient-to: 254, 249, 195;
+
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-accent: 255, 215, 0;
+      --gradient-from: 30, 58, 138;
+      --gradient-mid: 13, 71, 85;
+      --gradient-to: 17, 24, 39;
+    }
+  }
+}
+
 @layer components {
   .app-container {
     @apply sm:px-8 md:px-12 lg:px-20 xl:px-48 px-4;
@@ -25,5 +45,9 @@
 
   .input-field {
     @apply bg-transparent border-b-2 border-b-black outline-none;
+  }
+
+  .blue-to-red-gradient {
+    @apply bg-gradient-to-b from-blue-50 to-red-100;
   }
 }

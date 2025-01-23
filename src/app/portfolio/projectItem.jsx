@@ -34,12 +34,12 @@ const ProjectItem = ({ item }) => {
         </div>
         <div className="flex justify-end">
           <Link href={item.link} target="_blank" className="">
-            <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-md">
+            <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-accent font-semibold m-4 rounded-md">
               View Live
             </button>
           </Link>
           <Link href={item.repo} target="_blank" className="">
-            <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-md">
+            <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-accent font-semibold m-4 rounded-md">
               GitHub
             </button>
           </Link>
