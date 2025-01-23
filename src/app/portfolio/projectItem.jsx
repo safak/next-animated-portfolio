@@ -13,7 +13,7 @@ const ProjectItem = ({ item }) => {
         <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold ">
           {item.title}
         </h1>
-        <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-6 lg:gap-8">
           <div className="relative h-80 md:h-96 lg:h-[500px] xl:h-[600px] project-image-width bg-neutral-100 rounded">
             <Image src={item.img} alt={item.title} fill className="rounded" />
           </div>

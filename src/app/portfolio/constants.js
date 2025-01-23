@@ -108,10 +108,10 @@ export const items = [
             </li>
           </ul>
         </div>
-        <p>
+        {/* <p>
           This plugin simplifies workflows and enhances productivity for
           Littelfuse’s product management.
-        </p>
+        </p> */}
       </div>
     ),
     tools: ["Javascript", "CerosSDK", "Papa Parse"],
