@@ -13,11 +13,18 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        accent: "rgba(var(--color-accent))",
+        accent: {
+          bg: "rgba(var(--bg-accent))",
+          text: "rgba(var(--text-accent))",
+          hover: "rgba(var(--bg-accent-hover))",
+        },
         gradient: {
           from: "rgba(var(--gradient-from))",
           mid: "rgba(var(--gradient-mid))",
           to: "rgba(var(--gradient-to))",
+        },
+        primary: {
+          text: "rgba(var(--primary-text))",
         },
       },
     },
