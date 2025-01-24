@@ -6,6 +6,8 @@
   :root {
     --bg-accent: 153, 27, 27;
     --bg-accent-hover: 127, 17, 17;
+    --secondary-bg: 185, 28, 28;
+    --secondary-bg-hover: 159, 18, 18;
     --text-accent: 255, 255, 255;
     --gradient-from: 252, 231, 243;
     --gradient-mid: 255, 237, 213;
@@ -17,6 +19,8 @@
     :root {
       --bg-accent: 252, 211, 77;
       --bg-accent-hover: 250, 190, 50;
+      --secondary-bg: 254, 240, 138;
+      --secondary-bg-hover: 253, 224, 71;
       --text-accent: 31, 41, 55;
       --gradient-from: 30, 58, 138;
       --gradient-mid: 13, 71, 85;

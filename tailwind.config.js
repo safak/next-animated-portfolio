@@ -17,6 +17,10 @@ module.exports = {
           bg: "rgba(var(--bg-accent))",
           text: "rgba(var(--text-accent))",
           hover: "rgba(var(--bg-accent-hover))",
+          secondary: {
+            bg: "rgba(var(--secondary-bg))",
+            hover: "rgba(var(--secondary-bg-hover))",
+          },
         },
         gradient: {
           from: "rgba(var(--gradient-from))",

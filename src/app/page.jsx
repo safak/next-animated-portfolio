@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
+import Hero from "@/components/hero";
 
 const Homepage = () => {
   return (
@@ -9,7 +11,14 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row app-container">
         {/* IMAGE CONTAINER  */}
         <div className="home-section relative">
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          {/* <Image src="/hero.png" alt="hero" fill className="object-contain" /> */}
+          {/* <Image
+            src="/hand-coding-animate.svg"
+            alt="hero"
+            fill
+            className="object-contain"
+          /> */}
+          <Hero />
         </div>
         {/* TEXT CONTAINER */}
         <div className="home-section flex flex-col gap-8 justify-center lg:items-start items-center">
