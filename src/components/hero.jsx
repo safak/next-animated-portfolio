@@ -24,7 +24,7 @@ const paths = [
 
 const Hero = () => {
   return (
-    <div>
+    <div className="w-full h-full flex justify-center items-center">
       <svg
         className="animated"
         id="freepik_stories-hand-coding"
