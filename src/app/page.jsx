@@ -10,7 +10,7 @@ const Homepage = () => {
     <AnimatedPageWrapper>
       <div className="h-full flex flex-col lg:flex-row app-container">
         {/* IMAGE CONTAINER  */}
-        <div className="home-section relative">
+        <div className="home-section relative object-contain">
           {/* <Image src="/hero.png" alt="hero" fill className="object-contain" /> */}
           {/* <Image
             src="/hand-coding-animate.svg"

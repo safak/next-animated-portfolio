@@ -31,6 +31,8 @@ const Hero = () => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 500 500"
         version="1.1"
+        width="100%"
+        height="100%"
       >
         <g
           id="freepik--background-complete--inject-23"
