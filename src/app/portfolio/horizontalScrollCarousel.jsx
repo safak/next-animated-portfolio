@@ -15,7 +15,7 @@ const HorizontalScrollCarousel = () => {
       ref={projecsContainer}
       className="relative h-[300vh] bg-neutral-900"
     >
-      <div className="h-screen sticky top-0 bg-gradient-to-r from-purple-300 to-red-300 flex items-center overflow-hidden">
+      <div className="h-screen sticky top-0 bg-gradient-to  flex items-center overflow-hidden">
         <motion.div style={{ x }} className="flex">
           {items.map((item) => (
             <ProjectItem key={item.id} item={item} />

@@ -1,7 +1,8 @@
 export const items = [
   {
     id: 1,
-    color: "from-red-300 to-blue-300",
+    // color: "from-red-300 to-blue-300",
+    color: "",
     title: "DevExchange App",
     desc: () => (
       <div>
@@ -32,7 +33,8 @@ export const items = [
   },
   {
     id: 2,
-    color: "from-blue-300 to-violet-300",
+    // color: "from-blue-300 to-violet-300",
+    color: "",
     title: "DevExchange API",
     desc: () => (
       <div>
@@ -60,7 +62,8 @@ export const items = [
   },
   {
     id: 3,
-    color: "from-violet-300 to-purple-300",
+    // color: "from-violet-300 to-purple-300",
+    color: "",
     title: "Bubble Party",
     desc: () => (
       <div>
@@ -78,7 +81,8 @@ export const items = [
   },
   {
     id: 4,
-    color: "from-purple-300 to-red-300",
+    // color: "from-purple-300 to-red-300",
+    color: "",
     title: "Littelfuse Selection Guide",
     desc: () => (
       <div className="flex flex-col gap-6">

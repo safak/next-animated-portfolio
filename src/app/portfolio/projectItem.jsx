@@ -6,8 +6,9 @@ import Link from "next/link";
 const ProjectItem = ({ item }) => {
   return (
     <div
-      className={`w-screen h-screen flex justify-center items-center bg-gradient-to-r ${item.color}`}
-      style={{ backgroundColor: item.color }}
+      className={`w-screen h-screen flex justify-center items-center bg-gradient-to`}
+      // className={`w-screen h-screen flex justify-center items-center bg-gradient-to-r ${item.color}`}
+      // style={{ backgroundColor: item.color }}
     >
       <div className="flex flex-col gap-8 text-white">
         <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold ">
