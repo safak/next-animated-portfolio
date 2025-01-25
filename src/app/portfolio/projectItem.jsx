@@ -2,15 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const ProjectItem = ({ item }) => {
   return (
     <div
       className={`w-screen h-screen flex justify-center items-center bg-gradient-to`}
-      // className={`w-screen h-screen flex justify-center items-center bg-gradient-to-r ${item.color}`}
-      // style={{ backgroundColor: item.color }}
     >
-      <div className="flex flex-col gap-8 text-white">
+      <div className="flex flex-col gap-8 text-primary-text">
         <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold ">
           {item.title}
         </h1>
@@ -25,7 +24,7 @@ const ProjectItem = ({ item }) => {
               {item.tools.map((tool, index) => (
                 <span
                   key={index}
-                  className="p-2 text-sm lg:text-base bg-white text-gray-600  rounded-md"
+                  className="p-2 text-sm lg:text-base bg-accent-secondary-bg  text-accent-text rounded-md"
                 >
                   {tool}
                 </span>
@@ -33,16 +32,38 @@ const ProjectItem = ({ item }) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end gap-4">
           <Link href={item.link} target="_blank" className="">
-            <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-accent font-semibold m-4 rounded-md">
-              View Live
-            </button>
+            <motion.button
+              className="project-item-button relative "
+              whileHover={{ color: "#fff" }}
+            >
+              <motion.div
+                className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gradient-mid to-accent-bg z-0 project-item-button border-0 rounded shadow-md"
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ type: "tween", duration: 0.5, ease: "easeInOut" }}
+              >
+                Visit Site
+              </motion.div>
+              <span className="">Visit Site</span>
+            </motion.button>
           </Link>
           <Link href={item.repo} target="_blank" className="">
-            <button className="p-2 text-sm md:p-4 md:text-base lg:p-8 lg:text-lg bg-white text-accent font-semibold m-4 rounded-md">
-              GitHub
-            </button>
+            <motion.button
+              className="project-item-button relative "
+              whileHover={{ color: "#fff" }}
+            >
+              <motion.div
+                className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gradient-mid to-accent-bg z-0 project-item-button border-0 rounded shadow-md"
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ type: "tween", duration: 0.5, ease: "easeInOut" }}
+              >
+                GitHub
+              </motion.div>
+              <span className="">GitHub</span>
+            </motion.button>
           </Link>
         </div>
       </div>

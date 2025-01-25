@@ -58,4 +58,8 @@
   .blue-to-red-gradient {
     @apply bg-gradient-to-b from-blue-50 to-red-100;
   }
+
+  .project-item-button {
+    @apply px-2 text-sm md:px-4 md:text-base lg:px-8 lg:py-4 lg:text-lg text-primary-text font-semibold rounded-md border border-accent-bg;
+  }
 }

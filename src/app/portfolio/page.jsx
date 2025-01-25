@@ -7,7 +7,8 @@ import AnimatedPageWrapper from "@/components/animatedPageWrapper";
 const PortfolioPage = () => {
   return (
     <AnimatedPageWrapper>
-      <div className="h-[500vh]">
+      <div className="h-full">
+        {/* <div className="h-[500vh]"> */}
         <div className="w-screen h-[calc(100vh-6rem)] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center text-6xl md:text-8xl text-center">
             My Work
