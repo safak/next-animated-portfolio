@@ -10,7 +10,7 @@ const NavLink = ({ link }) => {
     <Link
       className={`rounded px-2 py-1 ${
         pathName === link.url &&
-        "bg-accent-secondary-bg hover:bg-accent-secondary-hover text-accent-text"
+        "bg-accent-secondary-bg text-accent-text hover:text-accent-text "
       }`}
       href={link.url}
     >
