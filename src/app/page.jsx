@@ -2,6 +2,7 @@
 
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
 import Hero from "@/components/hero";
+import Link from "next/link";
 
 const Homepage = () => {
   return (
@@ -29,12 +30,20 @@ const Homepage = () => {
 
           {/* BUTTONS  */}
           <div className="flex gap-4 justify-center lg:justify-start">
-            <button className="p-4 rounded-lg ring-1 ring-accent-bg bg-accent-bg hover:bg-accent-hover hover:ring-2 hover:ring-accent-hover text-accent-text">
+            <Link
+              href="/portfolio"
+              target="_blank"
+              className="p-4 rounded-lg ring-1 ring-accent-bg bg-accent-bg hover:bg-accent-hover hover:ring-2 hover:ring-accent-hover text-accent-text"
+            >
               View My Work
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-accent-bg text-primary-text hover:ring-accent-bg hover:ring-2">
+            </Link>
+
+            <Link
+              href="/contact"
+              className="p-4 rounded-lg ring-1 ring-accent-bg text-primary-text hover:ring-accent-bg hover:ring-2"
+            >
               Contact Me
-            </button>
+            </Link>
           </div>
         </div>
       </div>
