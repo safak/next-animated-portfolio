@@ -13,6 +13,7 @@
     --gradient-mid: 255, 237, 213;
     --gradient-to: 254, 249, 195;
     --primary-text: 31, 41, 55;
+    --form-bg: 249, 250, 251;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -26,6 +27,7 @@
       --gradient-mid: 13, 71, 85;
       --gradient-to: 17, 24, 39;
       --primary-text: 209, 213, 219;
+      --form-bg: 253, 245, 230;
     }
   }
 }
@@ -52,7 +54,7 @@
   }
 
   .input-field {
-    @apply bg-transparent border-b-2 border-b-black outline-none;
+    @apply bg-transparent border-b-2 border-b-gray-900 outline-none;
   }
 
   .blue-to-red-gradient {

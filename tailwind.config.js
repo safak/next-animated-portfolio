@@ -30,6 +30,9 @@ module.exports = {
         primary: {
           text: "rgba(var(--primary-text))",
         },
+        form: {
+          bg: "rgba(var(--form-bg))",
+        },
       },
     },
   },

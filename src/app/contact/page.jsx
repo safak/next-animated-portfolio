@@ -5,9 +5,8 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
 
-const text = "Say Hello";
-
 const ContactPage = () => {
+  const text = "Say Hello";
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
@@ -34,7 +33,7 @@ const ContactPage = () => {
 
           form.current.reset();
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );
@@ -43,7 +42,7 @@ const ContactPage = () => {
   return (
     <AnimatedPageWrapper>
       <div className="h-full flex flex-col lg:flex-row app-container">
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex gap-4 items-center justify-center text-6xl">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex gap-4 items-center justify-center text-6xl ">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -67,7 +66,7 @@ const ContactPage = () => {
 
         <form
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 flex flex-col gap-8 justify-center text-xl rounded-xl p-24"
+          className="h-1/2 lg:h-full lg:w-1/2  bg-white/80 text-gray-900 shadow-primary-text shadow-md flex flex-col gap-8 justify-center text-xl rounded-xl p-24"
           onSubmit={sendEmail}
         >
           <span>Dear Anel,</span>
@@ -81,7 +80,7 @@ const ContactPage = () => {
           <span>Regards</span>
           <button
             type="submit"
-            className="bg-purple-200 text-gray-600 font-semibold p-4 rounded"
+            className="bg-accent-secondary-bg hover:bg-accent-secondary-hover text-accent-text font-semibold p-4 rounded"
           >
             Send
           </button>
