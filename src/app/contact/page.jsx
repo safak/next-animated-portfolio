@@ -126,7 +126,7 @@ const ContactPage = () => {
                     Object.keys(touched).length === 0 ||
                     Object.keys(errors).length > 0
                   }
-                  className="bg-accent-secondary-bg hover:bg-accent-secondary-hover disabled:bg-accent-secondary-bg/50 text-accent-text font-semibold p-4 rounded"
+                  className="bg-accent-bg hover:bg-accent-hover disabled:bg-accent-bg/50 shadow-md text-accent-text font-semibold p-4 rounded"
                 >
                   Send
                 </button>
