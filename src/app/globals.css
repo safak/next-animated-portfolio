@@ -64,4 +64,8 @@
   .project-item-button {
     @apply px-2 text-sm md:px-4 md:text-base lg:px-8 lg:py-4 lg:text-lg text-primary-text font-semibold rounded-md border border-accent-bg;
   }
+
+  .error-message {
+    @apply text-red-500 text-sm;
+  }
 }
