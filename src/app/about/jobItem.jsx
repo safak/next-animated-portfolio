@@ -15,6 +15,7 @@ const JobItem = ({ job }) => {
 
       <Link
         href={job.companyLink}
+        target="_blank"
         className="text-sm p-1 bg-accent-secondary-bg text-accent-text rounded font-semibold w-fit cursor-pointer hover:bg-accent-hover"
       >
         {job.company}

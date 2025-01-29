@@ -16,6 +16,7 @@ const ProjectItem = ({ item }) => {
         <div className="flex flex-col gap-4 md:flex-row md:gap-6 lg:gap-8">
           <Link
             href={item.link}
+            target="_blank"
             className="relative h-80 md:h-96 lg:h-[500px] xl:h-[600px] project-image-width bg-neutral-100 rounded hover:transition-transform hover:scale-95 hover:shadow-lg hover:shadow-primary-text"
           >
             <Image src={item.img} alt={item.title} fill className="rounded" />
