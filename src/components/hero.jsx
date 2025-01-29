@@ -4,24 +4,6 @@ import { motion } from "motion/react";
 import "../../public/hand-coding-styles.css";
 import AnimatedPaths from "./animatedTerminal";
 
-const paths = [
-  { id: "elg3kuknr7w6l", origin: "186.555px 127.78px" },
-  { id: "elm1ffmeucixl", origin: "225.325px 127.78px" },
-  { id: "elw8ur9glunt", origin: "207.54px 134.31px" },
-  { id: "elha9arwi60l6", origin: "194.17px 140.83px" },
-  { id: "el2j8o2vkvfrh", origin: "233.55px 140.83px" },
-  { id: "elldwd66cxnja", origin: "185.765px 147.36px" },
-  { id: "el3c0wrmpmhmq", origin: "219.17px 147.36px" },
-  { id: "el2guyt9pdhop", origin: "192.345px 153.89px" },
-  { id: "elltegrlw5hib", origin: "194.09px 160.42px" },
-  { id: "elb6b7mhh95b6", origin: "231px 160.42px" },
-  { id: "els8qvfgm8vp", origin: "184.36px 166.94px" },
-  { id: "elpjvamz6gkb", origin: "223.245px 166.94px" },
-  { id: "elrn2svmwgrem", origin: "193.99px 173.47px" },
-  { id: "elkp7c28gw73r", origin: "224.02px 173.47px" },
-  { id: "elka55ts1fw3s", origin: "196.345px 180px" },
-];
-
 const Hero = () => {
   return (
     <div className="w-full h-full flex justify-center items-center">
