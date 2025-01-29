@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const TypewriterTextAnimation = ({ text }) => {
   return (
-    <div className="">
+    <div className="bg-gradient-to-r from-accent-bg to-primary-text text-transparent bg-clip-text">
       {text.split("").map((letter, index) => (
         <motion.span
           key={index}
@@ -13,7 +13,7 @@ const TypewriterTextAnimation = ({ text }) => {
             opacity: 1,
             transition: {
               delay: index * 0.1,
-              duration: 5,
+              duration: 2,
               repeat: 1,
             },
           }}

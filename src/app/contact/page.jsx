@@ -4,7 +4,6 @@
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
 import ContactForm from "./form";
 import ContactMeAnimation from "./contactMeAnimation";
-import TypewriterTextAnimation from "./typewriterTextAnimation";
 
 const ContactPage = () => {
   return (

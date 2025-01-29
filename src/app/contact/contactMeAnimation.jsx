@@ -14,7 +14,7 @@ const ContactMeAnimation = () => {
   }, []);
   return (
     <div className="w-full h-full flex lg:flex-col items-center justify-center md:justify-between lg:justify-center relative">
-      <div className="lg:top-36 flex shrink">
+      <div className="lg:top-36 flex shrink ">
         <TypewriterTextAnimation text="Say Hello" />
       </div>
       <div className="hidden md:flex md:shrink md:w-1/2 lg:w-full ">
@@ -577,7 +577,7 @@ const ContactMeAnimation = () => {
                     width="1"
                     height="7.34"
                     style={{
-                      fill: "rgb(64, 123, 255)",
+                      fill: "rgb(var(--secondary-bg))",
                       transformOrigin: "409.69px 313.84px",
                     }}
                     id="el85aeia65pms"
@@ -608,7 +608,7 @@ const ContactMeAnimation = () => {
                     width="1"
                     height="26.28"
                     style={{
-                      fill: "rgb(64, 123, 255)",
+                      fill: "rgb(var(--secondary-bg))",
                       transformOrigin: "409.69px 292.02px",
                     }}
                     id="elorolol70syj"
@@ -639,7 +639,7 @@ const ContactMeAnimation = () => {
                     width="13.56"
                     height="1"
                     style={{
-                      fill: "rgb(64, 123, 255)",
+                      fill: "rgb(var(--secondary-bg))",
                       transformOrigin: "276.36px 241.03px",
                     }}
                     id="el3p0phtjthfo"
@@ -667,7 +667,7 @@ const ContactMeAnimation = () => {
                   <polygon
                     points="391.44 344.26 350.27 416.24 319.89 344.26 391.44 344.26"
                     style={{
-                      fill: "rgb(64, 123, 255)",
+                      fill: "rgb(var(--secondary-bg))",
                       transformOrigin: "355.665px 380.25px",
                     }}
                     id="elskoqt0l7r3"
@@ -697,7 +697,7 @@ const ContactMeAnimation = () => {
                       height="144.96"
                       rx="27.84"
                       style={{
-                        fill: "rgb(64, 123, 255)",
+                        fill: "rgb(var(--secondary-bg))",
                         transformOrigin: "305.16px 317.51px",
                         transform: "rotate(180deg)",
                       }}
@@ -729,7 +729,7 @@ const ContactMeAnimation = () => {
                     <polygon
                       points="282.75 389.99 256.15 389.99 284.29 245.03 310.9 245.03 282.75 389.99"
                       style={{
-                        fill: "rgb(64, 123, 255)",
+                        fill: "rgb(var(--secondary-bg))",
                         opacity: "0.7",
                         transformOrigin: "283.525px 317.51px",
                       }}
@@ -740,7 +740,7 @@ const ContactMeAnimation = () => {
                     <polygon
                       points="306.78 389.99 291.65 389.99 319.8 245.03 334.92 245.03 306.78 389.99"
                       style={{
-                        fill: "rgb(64, 123, 255)",
+                        fill: "rgb(var(--secondary-bg))",
                         opacity: "0.7",
                         transformOrigin: "313.285px 317.51px",
                       }}
@@ -871,7 +871,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 d="M256.26,126.92c3.36.59,5.8.17,5.14-3.54a12.49,12.49,0,0,0-7.78-9.17c-4.24-1.56-5.19,5.44-5.19,5.44Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "254.969px 120.561px",
                 }}
                 className="animable"
@@ -997,7 +997,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 d="M203.33,208.57s-39.18,46.21-45.81,71.69c-6.9,26.5-10,92-10,92L161,374s9-59.93,20.33-84.35c12.06-26,46.75-74.06,46.75-74.06Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "187.8px 291.285px",
                 }}
                 className="animable"
@@ -1006,7 +1006,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 points="162.8 374.22 145.65 371.98 145.35 367.28 164.22 371.11 162.8 374.22"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "154.785px 370.75px",
                 }}
                 className="animable"
@@ -1035,7 +1035,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 d="M212.24,211.09S200.9,269.46,196.8,303c-3.32,27.1,7.13,92.83,7.13,92.83l11.24.69s-2.37-58.7,2.85-84.95c13.22-66.41,25.58-75.32,19-93.44Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "217.496px 303.805px",
                 }}
                 className="animable"
@@ -1044,7 +1044,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 points="216.56 396.6 202.01 395.71 201.33 391.57 217.09 393.21 216.56 396.6"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "209.21px 394.085px",
                 }}
                 className="animable"
@@ -1063,7 +1063,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 d="M238.13,216.29l.66,3.45c.05.27-.29.43-.68.32l-35.37-10c-.31-.08-.52-.3-.48-.5l.55-3.1c0-.22.35-.32.68-.23l34.16,9.68A.68.68,0,0,1,238.13,216.29Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "220.525px 213.146px",
                 }}
                 className="animable"
@@ -1082,7 +1082,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 d="M232.46,218.81l.91.26c.18.05.35,0,.37-.12l.68-4c0-.12-.11-.26-.29-.31l-.92-.26c-.18-.05-.34,0-.36.12l-.69,4C232.14,218.62,232.28,218.76,232.46,218.81Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "233.289px 216.725px",
                 }}
                 className="animable"
@@ -1091,7 +1091,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 d="M205.21,211.09l.92.26c.18.05.35,0,.37-.12l.68-4c0-.11-.11-.25-.3-.3l-.91-.26c-.18-.06-.35,0-.37.12l-.68,4C204.9,210.9,205,211,205.21,211.09Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "206.049px 209.008px",
                 }}
                 className="animable"
@@ -1100,7 +1100,7 @@ const ContactMeAnimation = () => {
                 id="freepik--path--inject-112"
                 d="M218.84,215l.91.26c.18,0,.35,0,.37-.12l.68-4c0-.12-.11-.26-.29-.31l-.92-.26c-.18-.06-.35,0-.37.12l-.68,4C218.52,214.76,218.65,214.9,218.84,215Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "219.669px 212.903px",
                 }}
                 className="animable"
@@ -1189,7 +1189,7 @@ const ContactMeAnimation = () => {
               <path
                 d="M202.92,407.93a2.44,2.44,0,0,1-1.64-.45,1.16,1.16,0,0,1-.34-1.08.7.7,0,0,1,.41-.58c1-.46,3.62,1.24,3.92,1.43a.22.22,0,0,1,.09.21.22.22,0,0,1-.16.16A10.13,10.13,0,0,1,202.92,407.93Zm-1.14-1.78a.65.65,0,0,0-.26,0,.28.28,0,0,0-.17.26.77.77,0,0,0,.2.73c.44.4,1.57.45,3.08.15A7.64,7.64,0,0,0,201.78,406.15Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "203.139px 406.84px",
                 }}
                 id="el2tyxcs27yjk"
@@ -1198,7 +1198,7 @@ const ContactMeAnimation = () => {
               <path
                 d="M205.16,407.63a.17.17,0,0,1-.1,0c-.83-.47-2.4-2.33-2.2-3.3a.69.69,0,0,1,.69-.57,1.06,1.06,0,0,1,.86.27c.94.83,1,3.32,1,3.42a.21.21,0,0,1-.1.18A.19.19,0,0,1,205.16,407.63Zm-1.47-3.5h-.1c-.26,0-.31.14-.33.24-.12.59.86,2,1.68,2.65a4.68,4.68,0,0,0-.8-2.72A.66.66,0,0,0,203.69,404.13Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "204.126px 405.698px",
                 }}
                 id="elitc4s0i0mz"
@@ -1207,7 +1207,7 @@ const ContactMeAnimation = () => {
               <path
                 d="M145.33,383.87a2.42,2.42,0,0,1-1.38-.33,1.13,1.13,0,0,1-.48-.94.67.67,0,0,1,.28-.59c1-.7,4.6.64,5,.8a.2.2,0,0,1,.13.2.2.2,0,0,1-.14.19A12.36,12.36,0,0,1,145.33,383.87Zm-.72-1.65a1.16,1.16,0,0,0-.63.13.24.24,0,0,0-.1.23.74.74,0,0,0,.31.63c.57.4,2,.32,3.85-.22A12.64,12.64,0,0,0,144.61,382.22Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "146.174px 382.842px",
                 }}
                 id="elcq71x0btxvw"
@@ -1216,7 +1216,7 @@ const ContactMeAnimation = () => {
               <path
                 d="M148.69,383.21h-.06c-1.08-.34-3.32-1.95-3.27-2.94,0-.24.13-.54.69-.67a1.53,1.53,0,0,1,1.17.22c1.18.77,1.65,3.05,1.67,3.15a.21.21,0,0,1-.06.19A.2.2,0,0,1,148.69,383.21Zm-2.3-3.25a1.07,1.07,0,0,0-.25,0c-.37.08-.37.23-.38.28,0,.6,1.52,1.89,2.64,2.4a4.76,4.76,0,0,0-1.41-2.52A1.12,1.12,0,0,0,146.39,380Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "147.126px 381.388px",
                 }}
                 id="elg3uyqez2o1c"
@@ -1226,7 +1226,7 @@ const ContactMeAnimation = () => {
                 <path
                   d="M185.52,130.48a66.67,66.67,0,0,0-78,87.06L88.09,238.22l29.39-2.28a66.69,66.69,0,1,0,68-105.46Z"
                   style={{
-                    fill: "rgb(64, 123, 255)",
+                    fill: "rgb(var(--secondary-bg))",
                     opacity: "0.6",
                     transformOrigin: "162.63px 195.448px",
                   }}
@@ -1321,7 +1321,7 @@ const ContactMeAnimation = () => {
               <path
                 d="M297.8,181.27a16.73,16.73,0,0,0-2.36,33.3,17.12,17.12,0,0,1-4.16,11.53s23.26-5.79,23.26-28.09A16.74,16.74,0,0,0,297.8,181.27Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "297.779px 203.685px",
                 }}
                 id="elfh1x0wxcf7l"
@@ -1330,7 +1330,7 @@ const ContactMeAnimation = () => {
               <path
                 d="M335.47,181.27a16.73,16.73,0,0,0-2.36,33.3A17.12,17.12,0,0,1,329,226.1s23.26-5.79,23.26-28.09A16.73,16.73,0,0,0,335.47,181.27Z"
                 style={{
-                  fill: "rgb(64, 123, 255)",
+                  fill: "rgb(var(--secondary-bg))",
                   transformOrigin: "335.474px 203.685px",
                 }}
                 id="elzpx5ydsi4z8"
