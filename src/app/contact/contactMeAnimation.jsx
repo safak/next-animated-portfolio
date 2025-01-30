@@ -5,6 +5,43 @@ import { motion } from "motion/react";
 import TypewriterTextAnimation from "./typewriterTextAnimation";
 import "../../../public/example-styles.css";
 
+const glowVariables = {
+  initial: { fill: "rgb(var(--gradient-mid))", opacity: 0.9 },
+  glow: {
+    fill: [
+      "rgb(var(--gradient-mid))",
+      "rgb(var(--gradient-from))",
+      "rgb(var(--gradient-mid))",
+    ],
+    opacity: [0.9, 1, 0.9], // Pulsing effect
+    filter: [
+      "drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.6))",
+      "drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.9))",
+      "drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.6))",
+    ],
+    transition: {
+      fill: {
+        duration: 3,
+        repeat: Infinity,
+        repeatType: "reverse",
+        ease: "easeInOut",
+      },
+      opacity: {
+        duration: 2.5,
+        repeat: Infinity,
+        repeatType: "reverse",
+        ease: "easeInOut",
+      },
+      filter: {
+        duration: 2.5,
+        repeat: Infinity,
+        repeatType: "reverse",
+        ease: "easeInOut",
+      },
+    },
+  },
+};
+
 const ContactMeAnimation = () => {
   useEffect(() => {
     setTimeout(() => {
@@ -356,18 +393,20 @@ const ContactMeAnimation = () => {
                 className="animable"
               ></rect>
               <g id="elga3vra6uaf">
-                <rect
+                <motion.rect
                   x="388.02"
                   y="155.99"
                   width="41.86"
                   height="38.91"
+                  variants={glowVariables}
+                  initial="initial"
+                  animate="glow"
                   style={{
-                    fill: "rgb(255, 255, 255)",
                     transformOrigin: "408.95px 175.445px",
                     transform: "rotate(90deg)",
                   }}
                   className="animable"
-                ></rect>
+                />
               </g>
               <path
                 d="M410,180.5a8.76,8.76,0,0,0-1.86.21,6,6,0,0,0,.24-1.65,5.73,5.73,0,0,0-1.35-3.7,4.65,4.65,0,0,0,1.35.22,4.82,4.82,0,1,0-3.81-1.93,5.76,5.76,0,1,0-2.06,11.17,8.56,8.56,0,0,0-1.18,4.35A8.67,8.67,0,1,0,410,180.5Z"
@@ -420,20 +459,24 @@ const ContactMeAnimation = () => {
                 id="eljqkr30ctyfj"
                 className="animable"
               ></rect>
-              <g id="el354cp50b92">
-                <rect
+
+              <motion.g id="el354cp50b92">
+                <motion.rect
                   x="321.6"
                   y="109.55"
                   width="47.3"
                   height="43.97"
+                  variants={glowVariables}
+                  initial="initial"
+                  animate="glow"
                   style={{
-                    fill: "rgb(255, 255, 255)",
                     transformOrigin: "345.25px 131.535px",
                     transform: "rotate(90deg)",
                   }}
                   className="animable"
-                ></rect>
-              </g>
+                />
+              </motion.g>
+
               <rect
                 x="327.2"
                 y="113.1"
