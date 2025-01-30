@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavLink from "./navLink";
 import { motion } from "motion/react";
+import Logo from "./logo";
 
 const list = [
   { url: "/", title: "Home" },
@@ -76,15 +77,9 @@ const NavBar = () => {
         ))}
       </div>
       {/* Logo  */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
-        <Link
-          href="/"
-          className="text-sm font-semibold bg-black rounded-md p-1 flex items-center justify-center"
-        >
-          <span className="text-white mr-1">Anel</span>
-          <span className="bg-white text-black h-8 px-1 flex items-center justify-center rounded">
-            Danza
-          </span>
+      <div className=" md:hidden lg:flex xl:w-1/3 xl:justify-center">
+        <Link href="/" className="w-28 lg:w-36 xl:w-48">
+          <Logo />
         </Link>
       </div>
 
