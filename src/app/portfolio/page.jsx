@@ -4,6 +4,7 @@ import HorizontalScrollCarousel from "./horizontalScrollCarousel";
 import HireMeAnimation from "./hireMeAnimation";
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
 import StarryBg from "./starryBg";
+import ScrollIcon from "../about/scrollIcon";
 
 const PortfolioPage = () => {
   return (
@@ -13,6 +14,9 @@ const PortfolioPage = () => {
         <div className="w-screen h-[calc(100vh-6rem)] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center text-6xl md:text-8xl text-center">
             My Work
+          </div>
+          <div className="bottom-16 absolute md:hidden">
+            <ScrollIcon />
           </div>
           <svg xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -32,7 +36,7 @@ const PortfolioPage = () => {
               </filter>
             </defs>
           </svg>
-          <div className="w-full h-screen absolute top-24 left-0 ">
+          <div className="w-full h-screen absolute top-1/4 md:top-24 left-0 ">
             <StarryBg />
           </div>
         </div>
