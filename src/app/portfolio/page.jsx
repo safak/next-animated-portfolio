@@ -3,6 +3,7 @@
 import HorizontalScrollCarousel from "./horizontalScrollCarousel";
 import HireMeAnimation from "./hireMeAnimation";
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
+import StarryBg from "./starryBg";
 
 const PortfolioPage = () => {
   return (
@@ -12,6 +13,27 @@ const PortfolioPage = () => {
         <div className="w-screen h-[calc(100vh-6rem)] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center text-6xl md:text-8xl text-center">
             My Work
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                  result="goo"
+                />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
+          <div className="w-full h-screen absolute top-24 left-0 ">
+            <StarryBg />
           </div>
         </div>
 
