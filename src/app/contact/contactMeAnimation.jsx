@@ -193,7 +193,8 @@ const ContactMeAnimation = () => {
                 width="196.22"
                 height="214.99"
                 style={{
-                  fill: "rgb(245, 245, 245)",
+                  fill: "rgb(var(--gradient-from), 0.2)",
+                  //   fill: "rgb(245, 245, 245)",
                   transformOrigin: "162.42px 181.175px",
                 }}
                 id="elvttofc30h4h"
@@ -233,6 +234,7 @@ const ContactMeAnimation = () => {
                     fill: "rgb(250, 250, 250)",
                     transformOrigin: "162.43px 181.175px",
                     transform: "rotate(90deg)",
+                    opacity: 0.1,
                   }}
                   className="animable"
                 ></rect>
@@ -241,6 +243,7 @@ const ContactMeAnimation = () => {
                 points="80.35 279.89 131.87 82.45 156.19 82.45 104.67 279.89 80.35 279.89"
                 style={{
                   fill: "rgb(255, 255, 255)",
+                  //   fill: "rgb(var(--secondary-bg), 0.1)",
                   transformOrigin: "118.27px 181.17px",
                 }}
                 id="elaxbgzy7tdl"
@@ -1276,16 +1279,43 @@ const ContactMeAnimation = () => {
                   className="animable"
                 ></path>
               </g>
-              <g id="el7rlhgm8l0yl">
-                <path
+
+              <motion.g id="el7rlhgm8l0yl">
+                {/* The base path */}
+                <motion.path
                   d="M185.52,130.48a66.67,66.67,0,0,0-78,87.06L88.09,238.22l29.39-2.28a66.69,66.69,0,1,0,68-105.46Z"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.2)"
+                  strokeWidth="2"
                   style={{
                     opacity: "0.1",
                     transformOrigin: "162.63px 195.448px",
                   }}
-                  className="animable"
-                ></path>
-              </g>
+                />
+
+                {/* The moving light line */}
+                <motion.path
+                  d="M185.52,130.48a66.67,66.67,0,0,0-78,87.06L88.09,238.22l29.39-2.28a66.69,66.69,0,1,0,68-105.46Z"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.8)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeDasharray="40 200"
+                  strokeDashoffset="200"
+                  animate={{
+                    strokeDashoffset: [-200, 0], // Makes the line travel forward
+                    transition: {
+                      duration: 5, // Adjust speed here
+                      repeat: Infinity,
+                      ease: "linear",
+                    },
+                  }}
+                  style={{
+                    filter: "drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8))", // Glow effect
+                  }}
+                />
+              </motion.g>
+
               <path
                 d="M170.54,258.91h0A63.63,63.63,0,0,1,120.06,234L119,232.56,96.58,234.3a.18.18,0,0,1-.14-.08.16.16,0,0,1,0-.16l14.81-15.73-.65-1.87A63.43,63.43,0,0,1,170.42,132a63.47,63.47,0,0,1,61.87,77.76A63.13,63.13,0,0,1,170.54,258.91Zm-51.48-26.64a.14.14,0,0,1,.11.06l1.12,1.47a63.29,63.29,0,0,0,50.25,24.83h0a63.17,63.17,0,0,0,14.18-124.71,63.51,63.51,0,0,0-14.3-1.64,63.15,63.15,0,0,0-59.52,84.09l.68,1.95a.12.12,0,0,1,0,.14L96.93,234l22.12-1.72Z"
                 style={{
