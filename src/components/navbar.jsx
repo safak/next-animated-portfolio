@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import NavLink from "./navLink";
 import { motion } from "motion/react";
 import Logo from "./logo";
+import GithubLogo from "./githubLogo";
+import LinkedInLogo from "./linkedInLogo";
 
 const list = [
   { url: "/", title: "Home" },
@@ -85,10 +86,13 @@ const NavBar = () => {
 
       <div className="hidden md:flex space-x-4 w-1/3 justify-end">
         <Link href="https://github.com/aneldanza" target="_blank">
-          <Image src="/github.png" alt="github" width={24} height={24} />
+          <GithubLogo />
         </Link>
-        <Link href="https://www.linkedin.com/in/anel-danza/" target="_blank">
-          <Image src="/linkedin.png" alt="linkedin" width={24} height={24} />
+        <Link
+          href="https://www.linkedin.com/in/anel-danza-a9591868/"
+          target="_blank"
+        >
+          <LinkedInLogo />
         </Link>
       </div>
 

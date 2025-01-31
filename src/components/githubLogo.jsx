@@ -3,7 +3,7 @@
 const GithubLogo = () => {
   return (
     <svg
-      className="w-8 h-8 text-white"
+      className="w-8 h-8 text-secondary-bg"
       role="img"
       viewBox="0 0 24 24"
       fill="currentColor"
