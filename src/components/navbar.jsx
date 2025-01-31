@@ -77,8 +77,8 @@ const NavBar = () => {
         ))}
       </div>
       {/* Logo  */}
-      <div className=" md:hidden lg:flex xl:w-1/3 xl:justify-center">
-        <Link href="/" className="w-28 lg:w-36 xl:w-48">
+      <div className="flex md:hidden lg:flex lg:justify-center xl:w-1/3 xl:justify-center relative">
+        <Link href="/" className="block w-28 lg:w-30 xl:w-36 z-10">
           <Logo />
         </Link>
       </div>
