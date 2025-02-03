@@ -50,7 +50,11 @@
   }
 
   .project-image-width {
-    @apply w-80 md:w-96 lg:w-[500px] xl:w-[600px];
+    @apply w-36 md:w-80 lg:w-[500px] xl:w-[600px];
+  }
+
+  .project-text-width {
+    @apply w-full md:w-full lg:w-[500px] xl:w-[600px];
   }
 
   .input-field {
@@ -62,7 +66,7 @@
   }
 
   .project-item-button {
-    @apply px-2 text-sm md:px-4 md:text-base lg:px-8 lg:py-4 lg:text-lg text-primary-text font-semibold rounded-md border border-accent-bg;
+    @apply p-2 text-sm md:px-4 md:text-base lg:px-8 lg:py-4 lg:text-lg text-primary-text font-semibold rounded-md border border-accent-bg;
   }
 
   .error-message {

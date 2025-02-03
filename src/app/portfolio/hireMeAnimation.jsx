@@ -7,7 +7,7 @@ import Link from "next/link";
 const HireMeAnimation = () => {
   return (
     <Link href={"/contact"} className="relative cursor-pointer">
-      <div className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-gradient-to text-primary-text rounded-full flex items-center justify-center">
+      <div className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-gradient-to text-primary-text rounded-full flex items-center justify-center text-sm md:text-md lg:text-lg xl:text-xl">
         Hire Me
       </div>
       <motion.svg
