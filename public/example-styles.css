@@ -1,0 +1,76 @@
+svg#freepik_stories-example:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-example.animated #freepik--background-complete--inject-112 {
+  animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+svg#freepik_stories-example.animated #freepik--speech-bubble--inject-112 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+  animation-delay: 0s;
+}
+svg#freepik_stories-example.animated #freepik--group--inject-112 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 1.4s;
+  opacity: 0;
+}
+svg#freepik_stories-example.animated #freepik--Character--inject-112 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 1.4s;
+  opacity: 0;
+}
+svg#freepik_stories-example.animated #freepik--group--inject-112 {
+  animation: 0.8s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+svg#freepik_stories-example.animated #freepik--quotation-marks--inject-112 {
+  animation: 0.8s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(2deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
