@@ -12,6 +12,28 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        accent: {
+          bg: "rgba(var(--bg-accent))",
+          text: "rgba(var(--text-accent))",
+          hover: "rgba(var(--bg-accent-hover))",
+          secondary: {
+            bg: "rgba(var(--secondary-bg))",
+            hover: "rgba(var(--secondary-bg-hover))",
+          },
+        },
+        gradient: {
+          from: "rgba(var(--gradient-from))",
+          mid: "rgba(var(--gradient-mid))",
+          to: "rgba(var(--gradient-to))",
+        },
+        primary: {
+          text: "rgba(var(--primary-text))",
+        },
+        form: {
+          bg: "rgba(var(--form-bg))",
+        },
+      },
     },
   },
   plugins: [],

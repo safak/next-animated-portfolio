@@ -4,9 +4,9 @@ import { motion, useScroll, useInView } from "motion/react";
 import { useRef } from "react";
 import { skills, jobs } from "./constants";
 import ExperienceItem from "./experienceItem";
-import Brain from "./brain";
 import ScrollIcon from "./scrollIcon";
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
+import Innovation from "./innovation";
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -98,7 +98,7 @@ const AboutPage = () => {
 
         {/* SVG CONTAINER  */}
         <div className="hidden lg:block sticky top-0 z-30 w-1/3 xl:w-1/2 ">
-          <Brain scrollYProgress={scrollYProgress} />
+          <Innovation scrollYProgress={scrollYProgress} />
         </div>
       </div>
     </AnimatedPageWrapper>

@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import NavLink from "./navLink";
 import { motion } from "motion/react";
+import Logo from "./logo";
+import GithubLogo from "./githubLogo";
+import LinkedInLogo from "./linkedInLogo";
 
 const list = [
   { url: "/", title: "Home" },
@@ -76,24 +78,26 @@ const NavBar = () => {
         ))}
       </div>
       {/* Logo  */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
-        <Link
-          href="/"
-          className="text-sm font-semibold bg-black rounded-md p-1 flex items-center justify-center"
-        >
-          <span className="text-white mr-1">Anel</span>
-          <span className="bg-white text-black h-8 px-1 flex items-center justify-center rounded">
-            Danza
-          </span>
+      <div className="flex md:hidden lg:flex lg:justify-center xl:w-1/3 xl:justify-center relative">
+        <Link href="/" className="block w-28 lg:w-30 xl:w-36 z-10">
+          <Logo />
         </Link>
       </div>
 
       <div className="hidden md:flex space-x-4 w-1/3 justify-end">
-        <Link href="https://github.com/aneldanza" target="_blank">
-          <Image src="/github.png" alt="github" width={24} height={24} />
+        <Link
+          href="https://github.com/aneldanza"
+          target="_blank"
+          className="cursor-pointer"
+        >
+          <GithubLogo />
         </Link>
-        <Link href="https://www.linkedin.com/in/anel-danza/" target="_blank">
-          <Image src="/linkedin.png" alt="linkedin" width={24} height={24} />
+        <Link
+          href="https://www.linkedin.com/in/anel-danza-a9591868/"
+          target="_blank"
+          className="cursor-pointer"
+        >
+          <LinkedInLogo />
         </Link>
       </div>
 

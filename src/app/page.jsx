@@ -1,15 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import AnimatedPageWrapper from "@/components/animatedPageWrapper";
+import Hero from "@/components/hero";
+import Link from "next/link";
 
 const Homepage = () => {
   return (
     <AnimatedPageWrapper>
       <div className="h-full flex flex-col lg:flex-row app-container">
         {/* IMAGE CONTAINER  */}
-        <div className="home-section relative">
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+        <div className="home-section relative object-contain">
+          <Hero />
         </div>
         {/* TEXT CONTAINER */}
         <div className="home-section flex flex-col gap-8 justify-center lg:items-start items-center">
@@ -29,12 +30,20 @@ const Homepage = () => {
 
           {/* BUTTONS  */}
           <div className="flex gap-4 justify-center lg:justify-start">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+            <Link
+              href="/portfolio"
+              target="_blank"
+              className="p-4 rounded-lg ring-1 ring-accent-bg bg-accent-bg hover:bg-accent-hover hover:ring-2 hover:ring-accent-hover text-accent-text"
+            >
               View My Work
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
+            </Link>
+
+            <Link
+              href="/contact"
+              className="p-4 rounded-lg ring-1 ring-accent-bg text-primary-text hover:ring-accent-bg hover:ring-2"
+            >
               Contact Me
-            </button>
+            </Link>
           </div>
         </div>
       </div>
