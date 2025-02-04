@@ -85,12 +85,17 @@ const NavBar = () => {
       </div>
 
       <div className="hidden md:flex space-x-4 w-1/3 justify-end">
-        <Link href="https://github.com/aneldanza" target="_blank">
+        <Link
+          href="https://github.com/aneldanza"
+          target="_blank"
+          className="cursor-pointer"
+        >
           <GithubLogo />
         </Link>
         <Link
           href="https://www.linkedin.com/in/anel-danza-a9591868/"
           target="_blank"
+          className="cursor-pointer"
         >
           <LinkedInLogo />
         </Link>
