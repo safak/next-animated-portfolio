@@ -1,0 +1,38 @@
+export const Projects = [
+  {
+    id: 1,
+    color: "from-red-300 to-blue-300",
+    title: "Recipe App",
+    desc: "This app lets you explore a wide range of food recipes with a user-friendly and attractive design. You can browse, search, and find detailed instructions and ingredient lists for each recipe, making cooking easy and fun.",
+    img: "/newRecipeApp.png",
+    link: "https://recipe-app-version1.vercel.app/",
+    technologies: ["/reactIcon.png", "/apiIcon.png", "/tailwind.png"],
+  },
+  {
+    id: 2,
+    color: "from-blue-300 to-violet-300",
+    title: "Text-Utlis App",
+    desc: "Developed a Text Utils app that offers text case changing, word and character counts, text-to-speech, customizable modes, and additional features for enhanced functionality.",
+    img: "/textUtils.png",
+    link: "https://textutils7.netlify.app/",
+    technologies: ["/reactIcon.png", "/bootstrap.png"],
+  },
+  {
+    id: 3,
+    color: "from-violet-300 to-purple-300",
+    title: "User Registry App",
+    desc: "The User Registry App is a comprehensive solution, enabling users to effortlessly perform CRUD operations - Create, Read, Update, Delete - on user records which ensures smooth management of user data.",
+    img: "/userRegistry.png",
+    link: "https://user-registry-beryl.vercel.app/",
+    technologies: ["/reactIcon.png", "/json.png", "/tailwind.png"],
+  },
+  {
+    id: 4,
+    color: "from-purple-300 to-red-300",
+    title: "Todo App",
+    desc: "Built a TodoApp dedicated to helping users keep track of their tasks and responsibilities effectively. With intuitive features, it ensures a seamless experience for organizing and managing to-do lists.",
+    img: "/todoAPp.png",
+    link: "https://chetreenelson.github.io/todoApp/",
+    technologies: ["/html5.png", "/cssIcon2.png", "/javascript.png"],
+  },
+];
